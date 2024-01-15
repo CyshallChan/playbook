@@ -18,7 +18,7 @@ spec:
   - name: root
     match:
       hosts:
-      - bookinfo.onwalk.net
+      - bookinfo.cyshall.com
       paths:
       - /*
     upstreams:
@@ -36,7 +36,7 @@ metadata:
   namespace: bookinfo
 spec:
   hosts:
-  - bookinfo.onwalk.net
+  - bookinfo.cyshall.com
   secret:
     name: bookinfo-tls
     namespace: bookinfo

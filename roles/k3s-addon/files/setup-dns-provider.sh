@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ak=$1
-sk=$2
+email=$1
+key=$2
 
 cat > external-dns-values.yaml << EOF
 clusterDomain: admin.local
@@ -10,16 +10,14 @@ sources:
   - ingress
 domainFilters:
   - onwalk.net
-  - svc.plus
+  - cyshall.com
   - svc-sit.ink
   - svc-dev.ink
 policy: upsert-only
-provider: alibabacloud
-alibabacloud:
-  accessKeyId: $ak
-  accessKeySecret: $sk
-  regionId: rg-acfm2akhd255pgi
-  zoneType: public
+provider: cloudflare
+cloudflare:
+  apiKey: $email
+  email: $key
 EOF
 
 helm repo add bitnami https://charts.bitnami.com/bitnami || echo true

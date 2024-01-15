@@ -6,18 +6,18 @@
   shell: "rm -f /usr/bin/node_exporter"
   when: inventory_hostname in groups[group]
 
-- name: download node_exporter binary 
-  shell: "curl -Lo /usr/bin/node_exporter https://mirrors.onwalk.net/tools/linux-amd64/node_exporter && chmod 755 /usr/bin/node_exporter" 
+- name: download node_exporter binary
+  shell: "curl -Lo /usr/bin/node_exporter https://mirrors.cyshall.com/tools/linux-amd64/node_exporter && chmod 755 /usr/bin/node_exporter"
   when: inventory_hostname in groups[group]
 
 - name: create node-exporter.service
   template: src=templates/node-exporter.service dest=/etc/systemd/system/node-exporter.service owner=root group=root mode=0644
-  when: inventory_hostname in groups[group] 
+  when: inventory_hostname in groups[group]
 
 - name: reload node-exporter service
-  shell: 'systemctl daemon-reload'
+  shell: "systemctl daemon-reload"
   when: inventory_hostname in groups[group]
 
 - name: init node-exporter service
-  shell: 'systemctl restart node-exporter.service'
+  shell: "systemctl restart node-exporter.service"
   when: inventory_hostname in groups[group]

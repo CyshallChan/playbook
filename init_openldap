@@ -9,10 +9,10 @@
       vars:
         group: master
         namespace: itsm
-        domain: onwalk.net
+        domain: cyshall.com
         update_secret: true
         auto_issuance: false
         tls:
           - secret_name: openldap-tls
-            keyfile: /etc/ssl/onwalk.net.key
-            certfile: /etc/ssl/onwalk.net.pem
+            keyfile: /etc/ssl/cyshall.com.key
+            certfile: /etc/ssl/cyshall.com.pem

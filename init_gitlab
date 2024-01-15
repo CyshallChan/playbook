@@ -11,13 +11,13 @@
         gitlab_version: '7.0.4'
         namespace: gitlab
         db_namespace: database
-        domain: onwalk.net
+        domain: cyshall.com
         auto_issuance: false
         update_secret: true  
         tls:
           - secret_name: gitlab-tls
-            keyfile: /etc/ssl/onwalk.net.key
-            certfile: /etc/ssl/onwalk.net.pem
+            keyfile: /etc/ssl/cyshall.com.key
+            certfile: /etc/ssl/cyshall.com.pem
         gitlab_oidc_client_id: gitlab-oidc
-        gitlab_oidc_isser: 'https://keycloak.onwalk.net/realms/cloud-sso'
-        gitlab_oidc_redirect_uri: 'https://gitlab.onwalk.net/users/auth/openid_connect/callback'
+        gitlab_oidc_isser: 'https://keycloak.cyshall.com/realms/cloud-sso'
+        gitlab_oidc_redirect_uri: 'https://gitlab.cyshall.com/users/auth/openid_connect/callback'

@@ -18,7 +18,7 @@ spec:
   egressGateway:
     nodeSelector:
       matchLabels:
-        node.kubernetes.io/name: tky-connector.onwalk.net
+        node.kubernetes.io/name: tky-connector.cyshall.com
     egressIP: $ip
 EOF
 kubectl apply -f /tmp/egress.yaml

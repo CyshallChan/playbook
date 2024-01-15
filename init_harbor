@@ -9,12 +9,12 @@
       vars:
         group: master
         namespace: harbor
-        domain: onwalk.net
+        domain: cyshall.com
         db_namespace: database
         auto_issuance: true
         update_secret: true
         storage_type: oss
         tls:
           - secret_name: harbor-tls
-            keyfile: /etc/ssl/onwalk.net.key
-            certfile: /etc/ssl/onwalk.net.pem
+            keyfile: /etc/ssl/cyshall.com.key
+            certfile: /etc/ssl/cyshall.com.pem

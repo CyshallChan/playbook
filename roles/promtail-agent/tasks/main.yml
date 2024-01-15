@@ -3,7 +3,7 @@
   when: inventory_hostname in groups[group]
 
 - name: Download promtail binary
-  shell: 'curl -Lo /usr/bin/promtail https://mirrors.onwalk.net/tools/linux-amd64/promtail && chmod 755 /usr/bin/promtail'
+  shell: "curl -Lo /usr/bin/promtail https://mirrors.cyshall.com/tools/linux-amd64/promtail && chmod 755 /usr/bin/promtail"
   when: inventory_hostname in groups[group]
 
 - name: Create promtail-agent service

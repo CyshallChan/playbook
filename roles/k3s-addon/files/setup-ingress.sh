@@ -135,13 +135,13 @@ admin:
     className: apisix
     enabled: true
     hosts:
-      - host: apisix-admin.onwalk.net
+      - host: apisix-admin.cyshall.com
         paths:
           - "/apisix"
     tls:
       - secretName: apisix-tls
         hosts:
-          - apisix-admin.onwalk.net
+          - apisix-admin.cyshall.com
 EOF
 helm upgrade --install apisix apisix/apisix --namespace ingress -f values.yaml
 fi

@@ -8,12 +8,12 @@
         name: observability-server
       vars:
         group: master
-        domain: svc.plus
+        domain: cyshall.com
         update_secret: true
         auto_issuance: false
         namespace: monitoring
         db_namespace: database
         tls:
           - secret_name: obs-tls
-            keyfile: /etc/ssl/svc.plus.key
-            certfile: /etc/ssl/svc.plus.pem
+            keyfile: /etc/ssl/cyshall.com.key
+            certfile: /etc/ssl/cyshall.com.pem

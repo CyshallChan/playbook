@@ -41,7 +41,7 @@ function setup_helm()
           *) echo "un-supported arch, exit ..."; exit 1; ;;
     esac
     rm -rf helm.tar.gz* /usr/local/bin/helm || echo true
-    sudo wget --no-check-certificate https://mirrors.onwalk.net/tools/linux-${ARCH}/helm.tar.gz && sudo tar -xvpf helm.tar.gz -C /usr/local/bin/
+    sudo wget --no-check-certificate https://mirrors.cyshall.com/tools/linux-${ARCH}/helm.tar.gz && sudo tar -xvpf helm.tar.gz -C /usr/local/bin/
     sudo chmod 755 /usr/local/bin/helm
   fi
 }

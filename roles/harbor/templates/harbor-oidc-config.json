@@ -1,7 +1,7 @@
 {
   "auth_mode": "oidc_auth",
   "oidc_name": "Keycloak-sso",
-  "oidc_endpoint": "https://keycloak.onwalk.net/realms/cloud-sso",
+  "oidc_endpoint": "https://keycloak.cyshall.com/realms/cloud-sso",
   "oidc_client_id": "harbor-oidc",
   "oidc_client_secret": '{{ harbor_oidc_client_token }}',
   "oidc_scope": "openid,profile,email",

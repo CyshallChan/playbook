@@ -6,7 +6,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: ldap.onwalk.net
+  - host: ldap.cyshall.com
     http:
       paths:
       - backend:

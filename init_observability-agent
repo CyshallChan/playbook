@@ -8,7 +8,7 @@
         name: observability-agent
       vars:
         group: master
-        domain: svc.plus
+        domain: cyshall.com
         namespace: monitoring
         deepflowserverip: 10.146.0.8
         deepflowk8sclusterid: d-kqjofXyZbg 

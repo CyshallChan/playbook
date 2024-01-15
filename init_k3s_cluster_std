@@ -8,15 +8,15 @@
         name: k3s-reset
       vars:
         group: master
-        cluster_reset: 'enable'
+        cluster_reset: "enable"
     - include_role:
         name: k3s
       vars:
         group: master
         cni: default
-        version: 'v1.27.2+k3s1'
-        pod_cidr: '10.10.0.0/16'
-        svc_cidr: '172.16.0.0/16'
+        version: "v1.27.2+k3s1"
+        pod_cidr: "10.10.0.0/16"
+        svc_cidr: "172.16.0.0/16"
     - include_role:
         name: k3s-addon
       vars:
@@ -24,7 +24,7 @@
         gitops: enable
         config_repo: https://github.com/svc-design/gitops.git
         ingress: nginx
-        domain: svc.plus
+        domain: cyshall.com
         namespace: ingress
         auto_issuance: true
         update_secret: false

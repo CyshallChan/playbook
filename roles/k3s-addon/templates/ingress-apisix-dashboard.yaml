@@ -8,7 +8,7 @@ spec:
   - name: root
     match:
       hosts:
-        - apisix-dashboard.onwalk.net
+        - apisix-dashboard.cyshall.com
       paths:
         - '/*'
     backends:
@@ -27,7 +27,7 @@ metadata:
   namespace: ingress
 spec:
   hosts:
-  - apisix-dashboard.onwalk.net
+  - apisix-dashboard.cyshall.com
   secret:
     name: apisix-tls
     namespace: ingress

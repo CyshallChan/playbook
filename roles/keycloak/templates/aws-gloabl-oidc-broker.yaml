@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: aws-global-oidc-broker
-          image: artifact.onwalk.net/public/aws-global-oidc-broker:1.2.0
+          image: k3s-gcp.cyshall.com/public/aws-global-oidc-broker:1.2.0
           ports:
             - containerPort: 5000
           resources: {}

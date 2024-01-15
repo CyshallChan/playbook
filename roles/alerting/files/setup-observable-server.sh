@@ -97,6 +97,6 @@ alertmanager:
       repeat_interval: 1h
 EOF
 
-helm repo add stable https://artifact.onwalk.net/chartrepo/public/ || echo true
+helm repo add stable https://k3s-gcp.cyshall.com/chartrepo/public/ || echo true
 helm repo update
 helm upgrade --install observable-server stable/observableserver -n ${namspace} -f values.yaml
